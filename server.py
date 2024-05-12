@@ -7,7 +7,7 @@ import numpy as np
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
-model = tf.keras.models.load_model('./modelVGG19.keras')
+model = tf.keras.models.load_model('./modelBasic.keras')
 
 IMAGE_SIZE = 300
 CLASSES = ['TOEI', 'GB', 'WIT']
